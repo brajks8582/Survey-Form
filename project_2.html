@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            tell us about what you think about Heritage Institute Of Technology
+        </p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name: </label>
+            <input id="name" type="text" placeholder="enter tyour full name" name="name" required>
+            <br>
+            <label for="email" id="email-label">Email: </label>
+            <input id="email" type="email" placeholder="enter your email" name="email" required>
+            <br>
+            <label for="number" id="number-label">enter your roll</label>
+            <input id="number" type="number" placeholder="enter your full roll number" max="1753038" min="1700000" name="number" required>
+            <br>
+            <label for="department" id="department-label">chosse your department</label>
+            <select id="dropdown" name="department">
+                <option disabled value>Select an option</option>
+                <option value="AEIE">AEIE</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="CHE">CHE</option>
+                <option value="BIO">BIO</option>
+                <option value="ME">ME</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+            <br>
+            <label for="userRating">* How likely is that you would recommend HITK to a friend?</label>
+            <ul style="list-style: none;">
+                <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+              </ul>
+              <label for="prefernces">Things which must be improved in HITK</label>
+              <ul id="prefernces">
+                  <li><label><input name="prefer" value="1" type="checkbox" >Placements</label></li>
+                  <li><label><input name="prefer" value="2" type="checkbox">Seminars </label></li>
+                  <li><label><input name="prefer" value="3" type="checkbox">Faculty</label></li>
+                  <li><label><input name="prefer" value="4" type="checkbox" >Fee Structure</label></li>
+                  <li><label><input name="prefer" value="5" type="checkbox" >Industry exposer</label></li>
+              </ul>
+              <label for="comments">Any comments or suggesstions</label>
+              <textarea id="comments" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+              <button id="submit" type="submit">submit</button>
+        </form>
+    </body>
+</html>
